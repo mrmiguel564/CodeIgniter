@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Carnet digital</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="far fa-id-card"></i>
+        </div>
+        <div class="sidebar-brand-text mx">Carnet<sup>Digital<sup></div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="tratamientos.html">
+          <i class="fas fa-medkit"></i>
+          <span>Tratamientos</span></a>
+      </li>
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">											
+        <a class="nav-link" href="medicos.html">
+          <i class=" fas fa-user-md"></i>
+          <span>Medicos</span></a>
+      </li>
+
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class=" 	fab fa-accessible-icon"></i>
+          <span>Cargas</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Cargas:</h6>
+            <a class="collapse-item" href="cargas.html">Juanito
+				<img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60"></a>
+          </div>
+        </div>
+      </li>  
+	  <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        configuracion
+      </div>
+
+       <!-- Nav Item - Dashboard -->
+      <li class="nav-item">											
+        <a class="nav-link" href="cuenta.html">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Cuenta</span></a>
+      </li>
+
+      
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+				<span> Tratamientos </span> </a>
+          <!-- Topbar Search --
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">Miercoles 17, 2019</div>
+                    <span class="font-weight-bold">Campaña de oftalmologica</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">Martes 23, 2019</div>
+                    Campaña de donación de sangre!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">Viernes 26, 2019</div>
+                    Campaña contra el cancer.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todo</a>
+              </div>
+            </li>
+
+            
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Alguien</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Perfiles
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Configuraciones
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Actividad
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Salir
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+               <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Activos</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>Descargar datos</a>
+          </div>
+		  
+		<div class="card shadow mb-4">
+                <!-- Card Header - Accordion -->
+                <a href="#collapseCardExample00" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample00">
+                  <h6 class="m-0 font-weight-bold text-primary">Espironolactona</h6>
+                </a>
+                <!-- Card Content - Collapse -->
+                <div class="collapse show" id="collapseCardExample00">
+                  <div class="card-body">
+                    <strong>Excipientes:</strong> Almidón de maíz, lactosa monohidrato, polividona, sodio almidón glicolato, sodio lauril sulfato, talco, magnesio estearato, celulosa microcristalina.<br/>
+					<strong>Clasificación:</strong> Diurético retenedor de potasio.<br/>
+					<strong>Indicaciones:</strong><br/>
+    Tratamiento de edema asociado a cirrosis hepática, síndrome nefrótico e insuficiencia cardíaca congestiva e hiperaldosteronismo secundario.<br/>
+    Tratamiento coadyuvante en la hipertensión.<br/>
+    Diagnóstico y tratamiento del hiperaldosteronismo primario.<br/>
+
+				  </div>
+                </div>
+              </div>
+			<div class="card shadow mb-4 collapsed">
+                <!-- Card Header - Accordion -->
+                <a href="#collapseCardExample01" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample01">
+                  <h6 class="m-0 font-weight-bold text-primary">Acenocumarol</h6>
+                </a>
+                <!-- Card Content - Collapse -->
+                <div class="collapse show" id="collapseCardExample01">
+                  <div class="card-body">
+                    <strong>Excipientes:</strong> Cada comprimido birranurado contiene: Acenocumarol 4 mg.<br/>
+					<strong>Clasificación:</strong> Anticoagulante oral cumarínico.<br/>
+					<strong>Indicaciones:</strong><br/>
+					
+					La sensibilidad a los anticoagulantes varía según los individuos y puede variar también a lo largo del tratamiento. 
+					Por ello se hace imprescindible la realización de pruebas de coagulación para adaptar constantemente la dosificación
+					según los resultados obtenidos. En caso de no poderse efectuar estas pruebas, deberá renunciarse a la utilización de acenocumarol. 
+					La dosis diaria se tomará siempre de una vez y a la misma hora del día. Ver Advertencias, Precauciones e Interacciones Medicamentosas en 
+					lo relativo a las adaptaciones de las dosis según las circunstancias clínicas. Dosis inicial: si el resultado de las pruebas de coagulación
+					(por ej.: el valor de quick, que es el tiempo de protrombina calculado como el porcentaje de la actividad de un lote de plasmas obtenidos 
+					de individuos normales) antes de instituir el tratamiento se halla dentro del margen normal, se aconseja generalmente: 8 (-12) mg el primer
+					día; y 4 (-8) mg el segundo día. Si el resultado es anormal al principio, la medicación se iniciará con suma cautela. Terapia de 
+					mantenimiento y controles de la coagulación: la dosis de mantenimiento, ajustada individualmente, varía en general entre 1 y 8 mg al día,
+					en función del valor de quick del paciente en concreto y de la enfermedad. Valor de quick/Dosis diaria: más de 50%: 2 comprimidos=8 mg; 
+					30-50%: 1 comprimido=4 mg; 15-29%: ¼-1 comprimido=1-4 mg. Las pruebas de coagulación deberán realizarse antes de instituir el tratamiento y
+					luego a diario hasta que se estabilice la coagulación entre los límites deseados. Más adelante pueden prolongarse los intervalos entre los 
+					controles. Se recomienda efectuar las extracciones de sangre para las pruebas de laboratorio siempre a la misma hora del día. Con vistas a 
+					la estandarización, se ha introducido recientemente el INR (International Normalized Ratio) que, mediante tromboplastinas calibradas,
+					permite una comparación internacional. El INR es el cociente entre el tiempo de tromboplastina del plasma del paciente y el tiempo de 
+					tromboplastina normal, elevado al índice de sensibilidad internacional (ISI), determinado por el método de la OMS para la tromboplastina 
+					de referencia. A medida que desciende el valor de quick aumenta el del INR. El margen terapéutico que ha de alcanzarse se halla, en general
+					, entre unos valores del INR de 2 y 4.5 según sea el cuadro clínico. Dentro de este margen, la mayoría de los enfermos tratados no
+					presentan recidiva de la trombosis ni complicaciones hemorrágicas graves. Una vez que ha cesado la medicación con acenocumarol, no hay 
+					peligro, por lo general, de hipercoagulación reactiva ni es preciso reducir paulatinamente la dosificación al terminar un tratamiento. No 
+					obstante, en casos muy raros y en ciertos pacientes con alto riesgo (por ej.: después de un infarto de miocardio), puede producirse una 
+					hipercoagulación de rebote. En tales enfermos, la suspensión de la terapia anticoagulante se llevará a cabo gradualmente. 
+
+                  </div>
+                </div>
+              </div>
+			     <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">historicos</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>Descargar datos</a>
+          </div>
+
+			<span> Sin eventos previos </span>
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+  <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Axlogan</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¿Carrar sesion?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Seleccione "Salir" para cerrar su actual sesion.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Salir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
