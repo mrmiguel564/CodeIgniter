@@ -57,15 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <a href="inicio" class="btn btn-primary btn-user btn-block">
                       Ingresar
                     </a>
-                    <hr>
-                    <a href="" class="btn btn-google btn-user btn-block">
-                      <i class="fab fa-google fa-fw"></i> Ingresar con Google
-                    </a>
-                    <a href="" class="btn btn-facebook btn-user btn-block">
-                      <i class="fab fa-facebook-f fa-fw"></i> Ingresar con Facebook
-                    </a>
-                  </form>
-                  <hr>
+
                   <div class="text-center">
                     <a class="small" href="forgot-password.html">¿Olvido su contraseña?</a>
                   </div>
